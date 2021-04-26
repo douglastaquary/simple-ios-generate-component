@@ -48,14 +48,14 @@ module Pod
         :prefix => ""
       }).run
 
-      `mv ./Pod_* ./Pod`
-      `rm -rf Pod_*`
-
       # There has to be a single file in the Classes dir
       # or a framework won't be created
-      #`touch Pod/Classes/ReplaceMe.swift`
+      `touch Pod/Classes/ReplaceMe.swift`
 
       `mv ./templates/swift/* ./`
+
+      `mv Pod_ Pod`
+      `rm -rf Pod_*`
 
       # remove podspec for osx
       `rm ./NAME-osx.podspec`
