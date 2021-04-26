@@ -9,7 +9,7 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/${USER_NAME}/${POD_NAME}'
-  s.plataforms = { :ios => "${POD_VERSION}" }
+  s.platforms        = { :ios => "${POD_VERSION}" }
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '${USER_NAME}' => '${USER_EMAIL}' }
   s.source           = { :git => 'https://github.com/${USER_NAME}/${POD_NAME}.git', :tag => s.version.to_s }
