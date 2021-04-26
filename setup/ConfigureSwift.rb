@@ -52,10 +52,10 @@ module Pod
       # or a framework won't be created
       `touch Pod/Classes/ReplaceMe.swift`
 
-      `mv ./templates/swift/* ./`
-
-      `mv Pod_ Pod`
+      `mv Pod_pan/* Pod`
       `rm -rf Pod_*`
+
+      `mv ./templates/swift/* ./`
 
       # remove podspec for osx
       `rm ./NAME-osx.podspec`
