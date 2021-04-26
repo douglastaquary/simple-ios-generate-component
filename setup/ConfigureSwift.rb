@@ -48,7 +48,7 @@ module Pod
         :prefix => ""
       }).run
 
-      `mv Pod_ Pod`
+      `mv ./Pod_* ./Pod`
       `rm -rf Pod_*`
 
       # There has to be a single file in the Classes dir
