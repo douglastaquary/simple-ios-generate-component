@@ -26,18 +26,18 @@ TODO: Add long description of the pod here.
   
 
   s.subspec 'Debug' do |debug|
-    debug.source_files = '#{POD_NAME}/Classes/**/*.{h,m,swift}'
+    debug.source_files = '${POD_NAME}/Classes/**/*.{h,m,swift}'
     debug.resources = '${POD_NAME}/Assets/**/*',
                       '${POD_NAME}/Classes/**/*.{xib,json,ttf,png,strings,xcassets,storyboard}'
 
     debug.test_spec 'Tests' do |test_spec|
       test_spec.test_type = :unit
-      test_spec.source_files = '#{POD_NAME}/Tests/**/*.swift'
+      test_spec.source_files = '${POD_NAME}/Tests/**/*.swift'
       test_spec.resources = '${POD_NAME}/Tests/**/*.{xib,json,ttf,png,strings,xcassets,storyboard}'
     end
     debug.test_spec 'UITests' do |test_spec|
       test_spec.test_type = :ui
-      test_spec.source_files = '#{POD_NAME}/UITests/**/*.swift'
+      test_spec.source_files = '${POD_NAME}/UITests/**/*.swift'
     end
     # debug.dependency 'AFNetworking'
 

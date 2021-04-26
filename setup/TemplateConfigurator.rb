@@ -86,6 +86,7 @@ module Pod
           end
       end
 
+      remove_unused_pod_folder
       replace_variables_in_files
       clean_template_files
       rename_template_files
@@ -181,6 +182,13 @@ module Pod
       FileUtils.mv "POD_LICENSE", "LICENSE"
       FileUtils.mv "NAME.podspec", "#{pod_name}.podspec"
     end
+
+
+    def remove_unused_pod_folder
+      `mv Pod_ Pod`
+      `rm -rf Pod_*`
+    end
+
 
     def rename_classes_folder
       FileUtils.mv "Pod", @pod_name
