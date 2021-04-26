@@ -52,8 +52,8 @@ module Pod
       # or a framework won't be created
       `touch Pod/Classes/ReplaceMe.swift`
 
-      # `mv Pod_pan/* Pod`
-      # `rm -rf Pod_*`
+      `mv ./Pod/Classes Pod/`
+      `rm -rf Pod*`
 
       `mv ./templates/swift/* ./`
 
