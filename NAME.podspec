@@ -15,7 +15,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/${USER_NAME}/${POD_NAME}.git', :tag => s.version.to_s }
 
   
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '5.3' 
   s.pod_target_xcconfig = { 'ENABLED_BITCODE' => 'NO', 'SKIP_INSTALL' => 'NO', 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
