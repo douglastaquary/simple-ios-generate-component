@@ -54,7 +54,7 @@ module Pod
 
       `mv ./templates/swift/* ./`
 
-      `mv Pod ./#{configurator.pod_name}`
+      #`mv ./Pod/* ./#{configurator.pod_name}`
 
       #{pod_name}
 
