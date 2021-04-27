@@ -86,7 +86,6 @@ module Pod
           end
       end
 
-      remove_unused_pod_folder
       replace_variables_in_files
       clean_template_files
       rename_template_files
